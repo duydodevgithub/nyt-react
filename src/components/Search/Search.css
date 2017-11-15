@@ -1,9 +1,9 @@
-.form {
-    align-content: center;
-    text-align: center;
+h4 {
+    float: left;
 }
 
 
 .form button {
     margin-top: 20px;
+    width: 20%;
 }

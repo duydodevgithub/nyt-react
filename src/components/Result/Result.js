@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 
-class Result extends Component {
-    render() {
-        return(
+const Result = (props) =>  (
             <div className="panel panel-success">
                 <div className="panel-heading text-center"><h3>Results</h3></div>
                 <div className="panel-body">
@@ -10,7 +8,5 @@ class Result extends Component {
                 {/* end panel body */}
             </div>
         );
-    }
-}
-
+ 
 export default Result;

@@ -1,17 +1,7 @@
 import React from "react";
-import Header from "./components/Header";
-import Search from "./components/Search";
-import Result from "./components/Result";
-import Article from "./components/Article";
+import Content from "./components/Content";
 
-const App = () => (
-    <div className="container">
-        <Header />
-        <Search />
-        <Result />
-        <Article />
-    </div>
-    
-);
+
+const App = () => <Content />;
 
 export default App;

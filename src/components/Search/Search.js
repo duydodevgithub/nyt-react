@@ -1,13 +1,29 @@
 import React, { Component } from "react";
-import "./Search.css"
+import "./Search.css";
+import API from "../../utils/API.js";
 
 class Form extends Component {
+    state = {
+        search: "",
+        results : []
+    };
+
+    onFormSubmit = (e) => {
+        e.preventDefault();
+        const query = e.target.elements.topic.value;
+        API.search(query).then(response => {
+            const result = response.data.response.docs;
+            console.log(result);
+        })
+        
+    }
+
     render() {
         return(
-            <form className="form">
+            <form className="form" onSubmit={this.onFormSubmit} >
                 <h4>Topic</h4>
                 <div className="">
-                    <input type="text" className="form-control" />
+                    <input type="text" className="form-control" name="topic" />
                 </div>
 
                 <h4>Start year</h4>

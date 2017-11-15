@@ -1,11 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
+import "./Header.css"
 
-const Header = (props) => {
+const Header = () => {
     return (
-        <div className="container">
+        <div>
             <div className="jumbotron">
                 <h1>Newyork Times Article Scrubber</h1>
-                <h2 className="text-center">Search for and annotate articles on interest</h2>                
+                <h2>Search for and annotate articles on interest</h2>                
             </div>
         </div>
     );

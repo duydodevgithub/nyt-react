@@ -14,7 +14,7 @@ const Result = (props) =>  (
                                             </div>
                                                 <div className="col-lg-3">
                                                     <form>
-                                                        <button type="button" className="btn btn-info">Save Article</button>
+                                                        <button onClick={props.handleSaveArticle} type="button" className="btn btn-info">Save Article</button>
                                                     </form>
                                                 </div>
                                             </div>
